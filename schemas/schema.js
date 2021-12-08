@@ -1397,7 +1397,7 @@ const schema = {
                 "Which principles and best practices does this project support (please list)",
               helperText: "",
               condition: {
-                when: "standards[implementBestPractices]",
+                when: "standards.implementBestPractices",
                 pattern: /Yes/,
               },
               isRequired: true,
@@ -1857,8 +1857,7 @@ const schema = {
                 "If yes - please describe the steps this project takes to address risk or prevent access by underage users:",
               helperText: "",
               condition: {
-                when:
-                  "doNoHarm.protectionFromHarassment.addressSafetySecurityUnderageUsers",
+                when: "doNoHarm.protectionFromHarassment.userInteraction",
                 pattern: /Yes/,
               },
               isRequired: true,
@@ -1913,7 +1912,7 @@ const schema = {
                 "If yes - please describe the steps taken to help users protect themselves.",
               helperText: "",
               condition: {
-                when: "doNoHarm.protectionFromHarassment.griefAbuseHarassmentProtection",
+                when: "doNoHarm.protectionFromHarassment.userInteraction",
                 pattern: /Yes/,
               },
               isRequired: true,
